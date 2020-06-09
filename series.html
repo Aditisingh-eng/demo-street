@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>DEMO Streaming</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+<!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand"  href="">DEMO Streaming</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="">Log in</a>
+      </li>
+      <li class="nav-item">
+<button type="button" class="btn btn-secondary btn-lg">Start your free trial</button>
+      </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand"  href="">Popular Titles</a>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Show All</button>
+        <button class="btn" onclick="filterSelection('nature')">Horror</button>
+        <button class="btn" onclick="filterSelection('cars')">Drama</button>
+        <button class="btn" onclick="filterSelection('people')">Action</button>
+   </nav>
+   <section class="movies-section">
+    <div class="main">
+    <div class="row">
+      <div class="column nature">
+        <div class="Content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/images.jpeg"></a>
+        <h4>Breathe</h4>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/inmates.jpeg"></a>
+        <h4>Inmates</h4>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/io.jpeg"></a>
+        <h4>IO</h4>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/life.jpeg"></a>
+        <h4>In Their Life</h4>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/loser.jpeg"></a>
+        <h4>Loser</h4>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/lovestinks.jpeg"></a>
+        <h4>LoveStinks</h4>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/lucifer.jpeg"></a>
+        <h4>Lucifer</h4>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/mortality.jpeg"></a>
+        <h4>The Enormity Of Life</h4>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/murder.jpeg"></a>
+        <h4>Murder By The Lake</h4>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/normativity.jpeg"></a>
+        <h4>Normativity</h4>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/perfume.jpeg"></a>
+        <h4>Perfume</h4>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/replicas.jpeg"></a>
+        <h4>Replicas</h4>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/robot.jpeg"></a>
+        <h4>Radioactive</h4>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/sin.jpeg"></a>
+        <h4>Sin</h4>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/skyscraper.jpeg"></a>
+        <h4>Skyscraper</h4>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/somecity.jpeg"></a>
+        <h4>Somebody</h4>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/special.jpeg"></a>
+        <h4>Special Ops</h4>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/star.jpeg"></a>
+        <h4>A Star Is Born</h4>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/thappad.jpeg"></a>
+        <h4>Thappad</h4>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/us.jpeg"></a>
+        <h4>Us</h4>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <a href="http://www.google.com">
+        <img class="myimg" src="images/zindabadd.jpeg"></a>
+        <h4>Zindabaad</h4>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+    <script type="text/javascript">
+      filterSelection("all")
+function filterSelection(c){
+  var x,i;
+  x=document.getElementsByClassName("column");
+  if(c=="all") c="";
+  for(i=0;i<x.length;i++)
+  {
+    imagesRemoveClass(x[i],"show");
+    if(x[i].className.indexOf(c)>-1)imagesAddClass(x[i],"show");
+  }
+}
+
+function imagesAddClass(element,name){
+  var i,arr1,arr2;
+  arr1=element.className.split(" ");
+  arr2=name.split(" ");
+  for(i=0; i<arr2.length;i++)
+  {
+    if(arr1.indexOf(arr2[i])==-1){
+      element.className+=" "+arr2[i];
+    }
+  }
+}
+function imagesRemoveClass(element,name)
+{
+  var i,arr1,arr2;
+  arr1=element.className.split(" ");
+  arr2=name.split(" ");
+  for(i=0;i<arr2.length;i++)
+  {
+    while(arr1.indexOf(arr2[i])>-1){
+      arr1.splice(arr1.indexOf(arr2[i]),1);
+    }
+  }
+  element.className=arr1.join(" ");
+}
+var btnContainer=document.getElementById("myBtnContainer");
+var btns=btnContainer.getElementsByClassName("btn");
+for(var i=0;i<btns.length;i++)
+{
+  btns[i].addEventListener("click",function()
+  {
+    var current=document.getElementsByClassName("active");
+    current[0].className=current[0].className.replace("active","");
+    this.className+="active";
+  })
+}
+    </script>
+   <footer class="page-footer font-small stylish-color-dark pt-4" id="footer">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" >Demo Streaming</h5>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#!">Terms</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links --->
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#!">Collection </a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Help</a>
+          </li>
+          <li>
+            <a href="#!">Manage Account</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fab fa-dribbble"> </i>
+      </a>
+    </li>
+    <button class="download-button btn btn-lg btn-light" type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="download-button btn btn-lg brn-light" type="button"><i class="fab fa-google-play"></i> Get it on</button>
+      <button class="download-button btn btn-lg btn-light" type="button"><i class="fab fa-microsoft"></i> Get it from</button>
+    </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div   class="footer-copyright text-center py-3">Copyright © 2016 Demo Streaming.All Rights Reseved
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<style type="text/css">
+  .body{
+color: #eff4f9;
+  }
+  .navbar-brand{
+    font-weight: bold;
+    font-family: "Ubuntu";
+    
+  }
+  .nav-link{
+    font-family: "Montserrat";
+    font-color:#fff;
+      }
+      .nav-item {
+  padding: 0 18px;
+  text-decoration-color: #fff;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+  footer{
+  background-color:#0f0f0f;
+  color: #FFFAFA;
+}
+.myimg{
+  width:200px;
+  height: 200px;
+   margin-left: 28px;
+    margin-top: 50px;
+} 
+.movies-section{
+  margin-bottom: 100px;
+}
+*{
+  box-sizing: border-box;
+}
+.row{
+  margin-left:50px;
+}
+.row,
+.row>.column{
+  padding: 8px;
+}
+.column{
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+.main{
+  max-width: 1000px;
+  margin: auto;
+}
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.content{
+  background-color: white;
+  padding: 10px;
+}
+.show{
+  display: block;
+}
+.btn active{
+  border:none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+.btn.active{
+  background-color: #666;
+  color: white;
+}
+h4{
+  margin-left:80px;
+  margin-right: 100px;
+}
+#myBtnContainer{
+margin-left: 680px;
+}
+</style>
+</body>
+ 
+
+</html>
